@@ -30,15 +30,23 @@
       currentSong = song;
     };
 
+    /**
+    * @function setSong
+    * @desc plays the song in the currentBuzzObject
+    */
+    var playSong = function(){
+      currentBuzzObject.play();
+      song.playing = true;
+    }
+
     SongPlayer.play = function(song){
       if (currentSong !== song){
         setSong(song)
-      currentBuzzObject.play();
-      song.playing = true;
+        playSong();
       }
       else if (currentSong === song) {
         if (currentBuzzObject.isPaused()){
-          currentBuzzObject.play();
+          playSong();
         }
       };
     };
