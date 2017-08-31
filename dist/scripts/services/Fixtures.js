@@ -6,7 +6,7 @@
         artist: 'Pablo Picasso',
         label: 'Cubism',
         year: '1881',
-        albumArtURL: 'assets/images/album_covers/01.png',
+        albumArtURL: '/assets/images/album_covers/01.png',
         songs: [
             {
               title: 'Blue',
@@ -17,6 +17,7 @@
               title: 'Green',
               duration: '103.96',
               audioUrl: '/assets/music/green'
+
             },
             {
               title: 'Red',
@@ -31,7 +32,7 @@
             {
               title: 'Magenta',
               duration: '374.22',
-              audioUrl: 'assets/music/magenta'
+              audioUrl: '/assets/music/magenta'
             }
         ]
     };
@@ -45,7 +46,7 @@
         songs: [
             {
               title: 'Hello Operator?',
-              duration: '4:26'
+              duration: '4:26',
             },
             {
               title: 'Ring, ring, ring',
